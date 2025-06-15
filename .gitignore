@@ -1,3 +1,6 @@
 # .gitignore
 
 .env
+/__/
+node_modules
+server/.venv
