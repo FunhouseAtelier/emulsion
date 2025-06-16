@@ -1,6 +1,6 @@
 {
   "name": "emulsion",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "type": "module",
   "main": "./server/main.py",
   "scripts": {
@@ -10,7 +10,7 @@
     "stop": "scripts/stop.sh",
     "stop:server": "scripts/stop.sh server",
     "stop:client": "scripts/stop.sh client",
-    "venv": "source scripts/venv.sh"
+    "freeze": "pip freeze > server/requirements.txt"
   },
   "keywords": [],
   "author": "Jason T Szabo",
