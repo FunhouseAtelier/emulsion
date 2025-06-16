@@ -4,3 +4,4 @@
 /__/
 node_modules
 server/.venv
+build

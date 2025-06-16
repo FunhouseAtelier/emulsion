@@ -4,8 +4,13 @@
   "type": "module",
   "main": "./server/main.py",
   "scripts": {
-    "client": "vite",
-    "server": "server/.venv/bin/python -m uvicorn server.main:app --reload --host 0.0.0.0 --port 8080"
+    "dev": "scripts/dev.sh",
+    "dev:server": "scripts/dev.sh server",
+    "dev:client": "scripts/dev.sh client",
+    "stop": "scripts/stop.sh",
+    "stop:server": "scripts/stop.sh server",
+    "stop:client": "scripts/stop.sh client",
+    "venv": "source scripts/venv.sh"
   },
   "keywords": [],
   "author": "Jason T Szabo",
@@ -27,6 +32,7 @@
     "@types/react-dom": "^19.1.6",
     "@vitejs/plugin-react": "^4.5.2",
     "autoprefixer": "^10.4.21",
+    "concurrently": "^9.1.2",
     "eslint": "^9.29.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
